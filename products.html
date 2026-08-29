@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products — JD Software Architecture Analytics AB</title>
+<meta name="description" content="QR from Image — an iOS utility from JD Software Architecture Analytics AB that reads QR codes out of screenshots and photos through the iOS Share Sheet. In development.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="/">JD Software Architecture Analytics <span>AB</span></a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/services.html">Services</a>
+      <a href="/products.html" aria-current="page">Products</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="legal-name">Products</p>
+    <h1>QR from Image</h1>
+    <p class="lede">Open QR codes directly from screenshots and photos. A native iOS utility, currently in development.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>The problem</h2>
+    <p>Pointing a camera at a QR code works well. Dealing with a QR code that is <em>already</em> inside an image on your phone &mdash; a screenshot of a ticket, a photo of a poster, a code sent to you in a message &mdash; works considerably less well. The handling is inconsistent between apps, and when it fails there is no obvious next step.</p>
+    <p>QR from Image does one thing: it takes an image, finds the QR codes in it, extracts the payload, and makes the destination easy to act on.</p>
+  </div>
+</section>
+
+<section class="tinted">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p>The app integrates with the iOS Share Sheet. Anywhere you can share an image &mdash; Photos, Messages, Mail, Safari, another app &mdash; you can send it straight to QR from Image and get the decoded result without launching the app first.</p>
+
+    <div class="grid">
+      <div class="item">
+        <h3>Share and scan</h3>
+        <p>Share any image from any app. The extension decodes it in place and shows the result immediately.</p>
+      </div>
+      <div class="item">
+        <h3>See the destination first</h3>
+        <p>The decoded destination is shown before anything is opened, so a QR code from an untrusted source cannot send you somewhere you did not agree to go.</p>
+      </div>
+      <div class="item">
+        <h3>History</h3>
+        <p>Previously scanned codes are kept on the device, so a result you dismissed is not lost.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Built on</h2>
+    <p>Native Swift and SwiftUI, using Apple's Vision framework for detection. iOS 18 and later. Scanning happens entirely on the device &mdash; images are not uploaded anywhere, because there is no reason for a QR decoder to need a network connection.</p>
+    <p>A second goal, once the fundamentals are solid, is to decode difficult images &mdash; small codes inside large screenshots, poor contrast, partial occlusion &mdash; more reliably than the built-in handling manages. That is an empirical claim, so it will be made only once it has been measured.</p>
+  </div>
+</section>
+
+<section class="tinted">
+  <div class="wrap">
+    <h2>Availability</h2>
+    <p>QR from Image is in active development and has not yet been released on the App Store. If you would like to know when it ships, or would like to test an early build, send us an email.</p>
+    <p class="contact-line"><a href="mailto:joakim.dahlstedt@jdsaa.com">joakim.dahlstedt@jdsaa.com</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="entity">JD Software Architecture Analytics AB</p>
+    <p>Organisationsnummer {{ORG_NR}} &middot; {{ADDRESS}} &middot; Sweden</p>
+    <p><a href="mailto:joakim.dahlstedt@jdsaa.com">joakim.dahlstedt@jdsaa.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
