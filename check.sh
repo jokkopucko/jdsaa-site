@@ -18,7 +18,7 @@ echo
 
 PAGES="index.html services.html products.html about.html contact.html"
 LEGAL="JD Software Architecture Analytics AB"
-EMAIL="joakim.dahlstedt@jdsaa.com"
+EMAIL="contact@jdsaa.com"
 fail=0
 
 for p in $PAGES; do
