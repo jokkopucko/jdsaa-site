@@ -16,7 +16,7 @@ SITE="$(cd "$SITE" && pwd)"
 echo "Checking site at: $SITE"
 echo
 
-PAGES="index.html services.html products.html about.html contact.html"
+PAGES="index.html services.html products.html about.html contact.html better-qr-support.html better-qr-privacy.html"
 LEGAL="JD Software Architecture Analytics AB"
 EMAIL="contact@jdsaa.com"
 fail=0
